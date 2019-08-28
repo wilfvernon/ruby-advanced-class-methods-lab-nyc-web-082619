@@ -37,8 +37,8 @@ class Song
   end
   
   def self.new_from_filename(filename)
-    file_array = filename.split('-').reject('.mp3')
-    binding.pry
+    # file_array = filename.split('-').reject('.mp3')
+    # binding.pry
   end
   
   def self.all
