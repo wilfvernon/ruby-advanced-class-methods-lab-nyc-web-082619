@@ -44,6 +44,14 @@ class Song
     song
   end
   
+  def self.create_from_filename(filename)
+    filename.slice!('.mp3')
+    file_array = filename.split('-')
+    song = self.create_by_name(file_array[1].strip)
+    song.artist_name = file_array[0].strip
+    song
+  end
+  
   def self.all
     @@all
   end
