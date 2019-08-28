@@ -40,6 +40,7 @@ class Song
     file_array = filename.delete('.mp3').split('-')
     song = self.create_by_name(file_array[1].strip)
     song.artist_name = file_array[0].strip
+    song
     #binding.pry
   end
   
