@@ -33,7 +33,8 @@ class Song
   end
   
   def self.alphabetical
-    arr = self.all.map{|song| song.name}
+    arr = self.all.map{|song|song.name}
+    binding.pry
     arr.sort
   end
   
