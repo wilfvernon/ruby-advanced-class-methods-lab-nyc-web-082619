@@ -18,7 +18,7 @@ class Song
   end
   
   def initialize
-    @name = self.name
+    self.name = @name
   end
 
   def save
