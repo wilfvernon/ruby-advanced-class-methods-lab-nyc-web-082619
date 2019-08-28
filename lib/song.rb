@@ -10,11 +10,15 @@ class Song
   
   def self.new_by_name(title)
     song = self.create
-    song.name
+    song.name = title
   end
   
   def self.all
     @@all
+  end
+  
+  def initialize
+    @name = self.name
   end
 
   def save
