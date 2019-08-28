@@ -3,6 +3,8 @@ class Song
   @@all = []
   
   def self.create
+    song = self.new
+    self.all.push(song)
   end
   
   def self.all
