@@ -38,8 +38,8 @@ class Song
   
   def self.new_from_filename(filename)
     file_array = filename.delete('.mp3').split('-')
-    song = self.create_by_name(file_array[0].strip)
-    song.artist_name = file_array[1].strip
+    song = self.create_by_name(file_array[1].strip)
+    song.artist_name = file_array[0].strip
     binding.pry
   end
   
