@@ -10,8 +10,7 @@ class Song
   
   def self.new_by_name(title)
     song = self.create
-    #binding.pry
-    song.name = title
+    song.name
   end
   
   def self.all
