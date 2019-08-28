@@ -36,6 +36,11 @@ class Song
     arr = self.all.sort_by{|song| song.name}
   end
   
+  def self.new_from_filename(filename)
+    file_array = filename.split('-').reject('.mp3')
+    binding.pry
+  end
+  
   def self.all
     @@all
   end
