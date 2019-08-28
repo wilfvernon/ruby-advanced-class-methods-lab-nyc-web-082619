@@ -5,6 +5,7 @@ class Song
   def self.create
     song = self.new
     self.all.push(song)
+    song
   end
   
   def self.all
