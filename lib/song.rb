@@ -37,7 +37,7 @@ class Song
   end
   
   def self.new_from_filename(filename)
-    file_array = filename.delete('.mp3').split('-')
+    file_array = filename.delete('.mp3').split('-').strip
     binding.pry
   end
   
