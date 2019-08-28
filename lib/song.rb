@@ -15,6 +15,9 @@ class Song
     song
   end
   
+  def create_by_name
+  end
+  
   def self.all
     @@all
   end
